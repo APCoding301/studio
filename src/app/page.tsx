@@ -8,7 +8,8 @@ export default function Home() {
     <div className="space-y-8">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold font-headline text-primary">Welcome to FinShenz!</h1>
-        <p className="mt-2 text-lg text-muted-foreground">Your journey to financial literacy starts here. Select a scenario to begin.</p>
+        <p className="mt-1 text-sm text-muted-foreground">Financial Conscience for the young adult</p>
+        <p className="mt-4 text-lg text-muted-foreground">Your journey to financial literacy starts here. Select a scenario to begin.</p>
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {scenarios.map((scenario) => (
