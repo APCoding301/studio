@@ -2,7 +2,9 @@
 
 import { useEffect } from 'react';
 import { useParams, notFound, useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { scenarios } from '@/lib/scenarios';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useUserData } from '@/hooks/useUserData';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -12,12 +14,18 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { CheckCircle2, ArrowLeft, PartyPopper } from 'lucide-react';
 
+const scenarioImages = PlaceHolderImages.reduce((acc, img) => {
+  acc[img.id] = img;
+  return acc;
+}, {} as Record<string, (typeof PlaceHolderImages)[0]>);
+
 export default function ScenarioPage() {
   const params = useParams();
   const router = useRouter();
   const { toast } = useToast();
   const slug = typeof params.slug === 'string' ? params.slug : '';
   const scenario = scenarios.find((s) => s.slug === slug);
+  const image = scenario ? scenarioImages[scenario.slug] : null;
   
   const { userData, setCheckedState, completeScenario, isLoaded } = useUserData();
   
@@ -65,6 +73,17 @@ export default function ScenarioPage() {
       </Button>
 
       <Card className="mb-6 overflow-hidden">
+        {image && (
+          <div className="relative w-full h-60">
+            <Image
+                src={image.imageUrl}
+                alt={image.description}
+                fill
+                style={{ objectFit: 'cover' }}
+                data-ai-hint={image.imageHint}
+            />
+          </div>
+        )}
         <CardHeader className="bg-primary/10">
           <CardTitle className="text-2xl font-headline text-primary">{scenario.title}</CardTitle>
         </CardHeader>

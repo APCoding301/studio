@@ -1,81 +1,80 @@
-export type ChecklistItem = {
-  id: string;
-  text: string;
-};
-
-export type Scenario = {
-  slug: string;
-  title: string;
-  lowdown: string;
-  checklist: ChecklistItem[];
-};
-
-export const scenarios: Scenario[] = [
+export const scenarios = [
   {
     slug: 'impulse-shopping',
-    title: 'I am going shopping on an impulse. How do I stay on budget?',
-    lowdown: 'Impulse shopping can derail your financial goals. The key is to create friction between the "want it" moment and the "buy it" moment, giving you time to think.',
+    title: 'I am going shopping on an impulse...',
+    lowdown:
+      'You just got your paycheck and that new gadget you’ve been eyeing is calling your name. It’s not on sale, and you don’t really need it, but the urge to buy it is strong. What do you do?',
     checklist: [
-      { id: '1', text: 'Make a shopping list before you go.' },
-      { id: '2', text: 'Set a strict budget for this trip and stick to it.' },
-      { id: '3', text: 'Wait 24 hours before buying any non-essential item over $50.' },
-      { id: '4', text: 'Unsubscribe from tempting marketing emails.' },
-    ],
+      { id: '1', text: 'Pause and take a deep breath before making a decision.' },
+      { id: '2', text: 'Calculate how many hours of work it would take to afford this item.' },
+      { id: '3', text: 'Wait 24 hours. If you still want it tomorrow, reconsider.' },
+      { id: '4', text: 'Check your budget. Is this purchase accounted for?' },
+      { id: '5', text: 'Think about your long-term goals. Does this purchase help you get there?' }
+    ]
   },
   {
-    slug: 'first-car',
-    title: 'I am buying my first car. What should I check?',
-    lowdown: 'Buying a car is a major expense that goes beyond the sticker price. Considering the total cost of ownership will help you make a smart decision.',
+    slug: 'student-loans',
+    title: 'I am thinking about taking out a student loan...',
+    lowdown:
+      'You got into your dream college, but the tuition is steep. A student loan seems like the only way to make it happen, but the thought of debt is daunting. How should you approach this?',
     checklist: [
-      { id: '1', text: 'Calculate the Total Cost of Ownership (TCO): price, insurance, fuel, and maintenance.' },
-      { id: '2', text: 'Get pre-approved for a car loan from your bank or credit union before visiting dealerships.' },
-      { id: '3', text: 'Research reliability and common issues for the models you are considering.' },
-      { id: '4', text: 'Always test-drive the car on routes you frequently use.' },
-      { id: '5', text: 'For a used car, get a vehicle history report and a pre-purchase inspection by a trusted mechanic.' },
-    ],
-  },
-  {
-    slug: 'vacation-saving',
-    title: 'I want to save for a vacation in 2 years. Where do I start?',
-    lowdown: 'Saving for a big goal like a vacation is all about consistency and making your money work for you. A clear plan makes the process achievable and less stressful.',
-    checklist: [
-      { id: '1', text: 'Estimate the total cost of your vacation (flights, accommodation, activities).' },
-      { id: '2', text: 'Divide the total cost by 24 (months) to find your monthly savings goal.' },
-      { id: '3', text: 'Open a dedicated high-yield savings account for your vacation fund.' },
-      { id: '4', text: 'Set up an automatic monthly transfer to this account.' },
-    ],
-  },
-  {
-    slug: 'first-paycheck',
-    title: 'I just got my first paycheck. How do I understand it?',
-    lowdown: 'Your paycheck is more than just a number. Understanding the deductions from your gross pay helps you know where your money is actually going.',
-    checklist: [
-      { id: '1', text: 'Identify your "Gross Pay" - the total amount before any deductions.' },
-      { id: '2', text: 'Review pre-tax deductions like health insurance or retirement contributions.' },
-      { id: '3', text: 'Look at tax deductions: federal, state, Social Security, and Medicare.' },
-      { id: '4', text: 'Find your "Net Pay" or "Take-Home Pay" - this is what you actually receive.' },
-    ],
-  },
-  {
-    slug: '50-30-20-budget',
-    title: 'How do I create a simple 50/30/20 monthly budget?',
-    lowdown: 'The 50/30/20 rule is a straightforward way to manage your money. It divides your after-tax income into three categories: Needs, Wants, and Savings.',
-    checklist: [
-      { id: '1', text: 'Calculate your monthly after-tax income.' },
-      { id: '2', text: 'List all your "Needs" (e.g., rent, groceries, utilities) and aim to keep them at or below 50% of your income.' },
-      { id: '3', text: 'List your "Wants" (e.g., dining out, hobbies, subscriptions) and budget up to 30% for them.' },
-      { id: '4', text: 'Allocate at least 20% of your income towards savings, investments, and paying off debt.' },
-    ],
+      { id: '1', text: 'Research and apply for all available scholarships, grants, and work-study programs first.' },
+      { id: '2', text: 'Fill out the Free Application for Federal Student Aid (FAFSA) to see if you qualify for federal aid.' },
+      { id: '3', text: 'Understand the difference between federal and private loans (interest rates, repayment options).' },
+      { id: '4', text: 'Use a loan calculator to estimate your future monthly payments.' },
+      { id: '5', text: 'Only borrow what you absolutely need for tuition and essential living expenses.' }
+    ]
   },
   {
     slug: 'first-credit-card',
-    title: 'What should I look for in a first credit card?',
-    lowdown: 'A first credit card is a tool to build your credit history. The best starter cards are simple, with no annual fee and clear terms.',
+    title: 'I want to get my first credit card...',
+    lowdown:
+      'Everyone says building credit is important. You’re thinking of getting your first credit card, but you’re worried about overspending and getting into debt. What’s the smart way to start?',
     checklist: [
-      { id: '1', text: 'Look for cards specifically for students or people with limited credit history.' },
-      { id: '2', text: 'Prioritize cards with no annual fee.' },
-      { id: '3', text: 'Understand the Annual Percentage Rate (APR), but plan to pay your balance in full each month to avoid interest.' },
-      { id: '4', text: 'Check if the card reports to all three major credit bureaus (Equifax, Experian, TransUnion).' },
-    ],
+      { id: '1', text: 'Look for a student card or a secured card, which are easier to get approved for.' },
+      { id: '2', text: 'Read the terms and conditions carefully, paying attention to the APR and any annual fees.' },
+      { id: '3', text: 'Plan to pay your bill in full every month to avoid interest charges.' },
+      { id: '4', text: 'Use the card for small, planned purchases that you can easily pay off (like gas or groceries).' },
+      { id: '5', text: 'Set up automatic payments or calendar reminders so you never miss a due date.' }
+    ]
   },
+  {
+    slug: 'creating-a-budget',
+    title: 'I need to create my first budget...',
+    lowdown:
+      'You feel like your money just disappears every month. It’s time to get a handle on your finances by creating a budget, but it seems complicated. Where do you even begin?',
+    checklist: [
+      { id: '1', text: 'Track your spending for a month to see where your money is actually going.' },
+      { id: '2', text: 'List all your sources of income (job, side hustles, allowances).' },
+      { id: '3', text: 'List your fixed expenses (rent, subscriptions, loan payments) and variable expenses (food, entertainment).' },
+      { id: '4', text: 'Try the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings.' },
+      { id: '5', text: 'Review your budget regularly and adjust it as your income or expenses change.' }
+    ]
+  },
+  {
+    slug: 'saving-for-big-purchase',
+    title: 'I want to save up for a big purchase...',
+    lowdown:
+      'Whether it’s a down payment on a car or a dream vacation, you have a big savings goal in mind. But it feels so far away. How can you make a realistic plan to get there?',
+    checklist: [
+      { id: '1', text: 'Define exactly what you\'re saving for and how much it costs.' },
+      { id: '2', text: 'Set a target date for when you want to have the money saved.' },
+      { id: '3', text: 'Break down your goal into smaller, monthly or weekly savings targets.' },
+      { id: '4', text: 'Open a separate high-yield savings account specifically for this goal to avoid temptation.' },
+      { id: '5', text: 'Look for ways to cut back on spending or increase your income to reach your goal faster.' }
+    ]
+  },
+  {
+    slug: 'understanding-401k',
+    title: 'My new job offers a 401(k)...',
+    lowdown:
+      'You started a new job, and they mentioned a 401(k) with a "company match." It sounds like free money, but retirement feels a lifetime away. How do you make the most of this benefit?',
+    checklist: [
+      { id: '1', text: 'Find out the details of your company\'s 401(k) match (e.g., "matches 100% of contributions up to 3% of your salary").' },
+      { id: '2', text: 'Contribute at least enough to get the full company match. It\'s a 100% return on your investment!' },
+      { id: '3', text: 'Understand the difference between a Traditional 401(k) (pre-tax) and a Roth 401(k) (post-tax), if offered.' },
+      { id: '4', text: 'Choose your investments. A "target-date fund" is often a simple and effective starting point.' },
+      { id: '5', text: 'Increase your contribution percentage each time you get a raise, even if it\'s just by 1%.' }
+    ]
+  }
 ];
