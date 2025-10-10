@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "impulse-shopping",
-      "description": "A young woman walking on a city street with a handbag slung over her shoulder and looking at her smartphone.",
-      "imageUrl": "https://picsum.photos/seed/city-shopper/600/400",
-      "imageHint": "woman street"
+      "description": "An expensive handbag sitting on a pedestal inside a high-end store that sells fancy handbags.",
+      "imageUrl": "https://picsum.photos/seed/fancy-handbag/600/400",
+      "imageHint": "handbag store"
     },
     {
       "id": "first-car",
