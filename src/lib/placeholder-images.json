@@ -2,39 +2,39 @@
   "placeholderImages": [
     {
       "id": "impulse-shopping",
-      "description": "An expensive handbag sitting on a pedestal inside a high end store.",
+      "description": "A person looking at a display of expensive handbags in a store.",
       "imageUrl": "https://storage.googleapis.com/project-spark-b8305.appspot.com/static/com.google.spark.ui/user_provided_image_816e87f1-7c5b-426c-9457-3aa5fc6f6959.png",
-      "imageHint": "handbag store"
+      "imageHint": "handbag luxury"
     },
     {
-      "id": "first-car",
-      "description": "A shiny new car in a dealership showroom.",
-      "imageUrl": "https://picsum.photos/id/514/600/400",
-      "imageHint": "new car"
-    },
-    {
-      "id": "vacation-saving",
-      "description": "A tropical beach with clear water and palm trees.",
-      "imageUrl": "https://picsum.photos/id/607/600/400",
-      "imageHint": "beach vacation"
-    },
-    {
-      "id": "first-paycheck",
-      "description": "A person holding their first paycheck with a smile.",
-      "imageUrl": "https://picsum.photos/id/24/600/400",
-      "imageHint": "money paycheck"
-    },
-    {
-      "id": "50-30-20-budget",
-      "description": "A pie chart showing a 50/30/20 budget split.",
-      "imageUrl": "https://picsum.photos/id/9/600/400",
-      "imageHint": "budget chart"
+      "id": "student-loans",
+      "description": "A university student studying in a library, looking thoughtful.",
+      "imageUrl": "https://picsum.photos/seed/student/600/400",
+      "imageHint": "student library"
     },
     {
       "id": "first-credit-card",
-      "description": "A person holding a new credit card.",
-      "imageUrl": "https://picsum.photos/id/1048/600/400",
+      "description": "A person holding a credit card and using a laptop to shop online.",
+      "imageUrl": "https://picsum.photos/seed/creditcard/600/400",
       "imageHint": "credit card"
+    },
+    {
+      "id": "creating-a-budget",
+      "description": "Someone writing in a planner with coffee, a calculator, and receipts on the table.",
+      "imageUrl": "https://picsum.photos/seed/budget/600/400",
+      "imageHint": "budget planner"
+    },
+    {
+      "id": "saving-for-big-purchase",
+      "description": "A glass jar being filled with coins, with a label that says 'Vacation Fund'.",
+      "imageUrl": "https://picsum.photos/seed/saving/600/400",
+      "imageHint": "savings jar"
+    },
+    {
+      "id": "understanding-401k",
+      "description": "A diverse group of young professionals in a modern office meeting.",
+      "imageUrl": "https://picsum.photos/seed/401k/600/400",
+      "imageHint": "office meeting"
     }
   ]
 }
