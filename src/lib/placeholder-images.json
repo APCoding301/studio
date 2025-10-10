@@ -2,38 +2,38 @@
   "placeholderImages": [
     {
       "id": "impulse-shopping",
-      "description": "A person looking at a display of expensive handbags in a store.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-b8305.appspot.com/static/com.google.spark.ui/user_provided_image_816e87f1-7c5b-426c-9457-3aa5fc6f6959.png",
-      "imageHint": "handbag luxury"
+      "description": "High heels women's shoes.",
+      "imageUrl": "https://picsum.photos/id/21/600/400",
+      "imageHint": "luxury shoes"
     },
     {
       "id": "student-loans",
       "description": "A university student studying in a library, looking thoughtful.",
-      "imageUrl": "https://picsum.photos/seed/student/600/400",
+      "imageUrl": "https://picsum.photos/id/3/600/400",
       "imageHint": "student library"
     },
     {
       "id": "first-credit-card",
-      "description": "A person holding a credit card and using a laptop to shop online.",
-      "imageUrl": "https://picsum.photos/seed/creditcard/600/400",
-      "imageHint": "credit card"
+      "description": "credit card company buildings",
+      "imageUrl": "https://picsum.photos/id/1048/600/400",
+      "imageHint": "bank buildings"
     },
     {
       "id": "creating-a-budget",
-      "description": "Someone writing in a planner with coffee, a calculator, and receipts on the table.",
-      "imageUrl": "https://picsum.photos/seed/budget/600/400",
+      "description": "Planner with a pen, a laptop, and stuff on the table.",
+      "imageUrl": "https://picsum.photos/id/180/600/400",
       "imageHint": "budget planner"
     },
     {
       "id": "saving-for-big-purchase",
       "description": "A glass jar being filled with coins, with a label that says 'Vacation Fund'.",
-      "imageUrl": "https://picsum.photos/seed/saving/600/400",
+      "imageUrl": "https://picsum.photos/seed/savings/600/400",
       "imageHint": "savings jar"
     },
     {
       "id": "understanding-401k",
       "description": "A diverse group of young professionals in a modern office meeting.",
-      "imageUrl": "https://picsum.photos/seed/401k/600/400",
+      "imageUrl": "https://picsum.photos/seed/office/600/400",
       "imageHint": "office meeting"
     }
   ]
