@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "impulse-shopping",
-      "description": "An expensive handbag sitting on a pedestal inside a high-end store that sells fancy handbags.",
-      "imageUrl": "https://picsum.photos/seed/fancy-handbag/600/400",
-      "imageHint": "handbag store"
+      "description": "Three friends happily shopping on a city street.",
+      "imageUrl": "https://storage.googleapis.com/project-spark-b8305.appspot.com/static/com.google.spark.ui/user_provided_image_816e87f1-7c5b-426c-9457-3aa5fc6f6959.png",
+      "imageHint": "women shopping"
     },
     {
       "id": "first-car",
