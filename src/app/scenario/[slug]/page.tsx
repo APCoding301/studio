@@ -12,7 +12,7 @@ import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { CheckCircle2, ArrowLeft, PartyPopper } from 'lucide-react';
+import { CheckCircle2, ArrowLeft, PartyPopper, Youtube, BookOpen } from 'lucide-react';
 
 const scenarioImages = PlaceHolderImages.reduce((acc, img) => {
   acc[img.id] = img;
@@ -34,6 +34,8 @@ export default function ScenarioPage() {
 
   useEffect(() => {
     if (!scenario || !isLoaded) return;
+
+    if (!scenario.checklist) return;
 
     const allItemsChecked = scenario.checklist.every(item => checkedItems.includes(item.id));
     const scenarioAlreadyCompleted = userData.completedScenarios.includes(slug);
@@ -93,7 +95,7 @@ export default function ScenarioPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="mb-6">
         <CardHeader>
           <CardTitle className="text-xl font-headline flex items-center">
             Your Action Plan
@@ -101,7 +103,7 @@ export default function ScenarioPage() {
           </CardTitle>
           <CardDescription>Complete the checklist to master this topic.</CardDescription>
         </CardHeader>
-        <CardContent className="space-y-2">
+        {scenario.checklist && <CardContent className="space-y-2">
           {scenario.checklist.map((item, index) => (
             <div key={item.id}>
               <div className="flex items-start space-x-3 rounded-md p-3 transition-colors hover:bg-secondary/50">
@@ -127,8 +129,37 @@ export default function ScenarioPage() {
               {index < scenario.checklist.length - 1 && <Separator />}
             </div>
           ))}
-        </CardContent>
+        </CardContent>}
       </Card>
+      
+      {scenario.learnMore && scenario.learnMore.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl font-headline flex items-center">
+              <BookOpen className="mr-3 h-6 w-6 text-muted-foreground" />
+              Learn More
+            </CardTitle>
+            <CardDescription>Watch these short videos to dive deeper.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-3">
+              {scenario.learnMore.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-md transition-colors hover:bg-secondary/50 group"
+                  >
+                    <Youtube className="h-6 w-6 text-red-600/90" />
+                    <span className="font-medium text-sm group-hover:text-primary transition-colors">{item.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
