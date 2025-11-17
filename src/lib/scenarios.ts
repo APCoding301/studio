@@ -13,9 +13,9 @@ export const scenarios = [
       { id: '5', text: 'Think about your long-term goals. Does this purchase help you get there?' }
     ],
     learnMore: [
-      { title: 'The Psychology Behind Impulse Buying - The Financial Diet', url: 'https://www.youtube.com/watch?v=Fph_2g3t32A' },
-      { title: 'How To Stop Impulse Spending - Ramit Sethi', url: 'https://www.youtube.com/watch?v=s5Z5813bso0' },
-      { title: '7 Tips To Control Impulse Shopping - The Kwakye-Berko Family', url: 'https://www.youtube.com/watch?v=5UeA6qBEbro' }
+      { title: 'Impulse Buying: Why You Buy Stuff You Don\'t Need', url: 'https://youtu.be/DUyyS2rjpJY?si=tAUG6NwkXoklcNy2' },
+      { title: 'The Psychology Behind Impulse Buying: Why We Can\'t Resist', url: 'https://youtu.be/sXkDlzAzUuo?si=VY3rxQbGMQLLK-CG' },
+      { title: '4 Tips To Stop Impulse Buying [Minimalism Series]', url: 'https://youtu.be/wzMLB58LLU8?si=dQjk5ycdQzOtQh-R' }
     ]
   },
   {
