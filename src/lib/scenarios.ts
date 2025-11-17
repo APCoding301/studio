@@ -1,3 +1,4 @@
+
 export const scenarios = [
   {
     slug: 'impulse-shopping',
