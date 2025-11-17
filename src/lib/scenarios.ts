@@ -31,9 +31,9 @@ export const scenarios = [
       { id: '5', text: 'Only borrow what you absolutely need for tuition and essential living expenses.' }
     ],
     learnMore: [
-        { title: 'Student Loans Explained in 3 Minutes - The Plain Bagel', url: 'https://www.youtube.com/watch?v=5-sYI_e_a-k' },
-        { title: 'How Do Student Loans Work? - The College Investor', url: 'https://www.youtube.com/watch?v=j2L3dMI4q5I' },
-        { title: 'Federal vs. Private Student Loans - NerdWallet', url: 'https://www.youtube.com/watch?v=wP0z1i9sKq4' }
+        { title: 'Everything You Need To Know About Student Loans', url: 'https://youtu.be/FyLRxU5mJPM?si=m88gNZXgZGDXQMxR' },
+        { title: 'Why You Should Fill Out The FAFSA... - The College Investor', url: 'https://youtu.be/YLaojB4edbs?si=vRG26TfdLozm1C-u' },
+        { title: 'How I graduated debt free - NerdWallet', url: 'https://youtube.com/shorts/DDl_f1Tfcs8?si=F34HMcL3C1H0y51R' }
     ]
   },
   {
